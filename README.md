@@ -19,9 +19,19 @@ You could regenerate names.txt (list of real drug names) or chain.p if you wante
 ## Example ads
 Are you plagued by restless elbow? Ask your doctor if Mencardand Ethroarb® is right for you!
 
+You don't have to deal with an excess of desert sand bile alone. Ask your doctor if Relermin Azidoline Bexxer Syne Statethine® is right for you!
+
+Are you suffering from pompous knee? Try Sodiumate Hyamiham®!
+
 Is compulsive nausea keeping you up at night? Try Colybate®!
 
 Worried you might have vulgar buttock? Try Priomine®!
+
+Are you suffering from restless intestine? Ask your doctor if Urizol® is right for you!
+
+Are you plagued by sarcastic cornea? Salim Carostidexivenamicavush® can help!
+
+Is excessive exhaustion keeping you up at night? Ask your doctor about Zesynt Suprin Vitripipyra® today!
 
 Worried you might have restless brainstem? Try Therol Estchin®!
 
