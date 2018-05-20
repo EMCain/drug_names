@@ -2,16 +2,17 @@
 
 QUESTIONS = [
   'Are you suffering from {}?',
-  'Is your {} keeping you up at night?',
+  'Are you plagued by {}?',
+  'Is {} keeping you up at night?',
   'Worried you might have {}?',
   'You don\'t have to deal with {} alone.',
 ]
 
 ANSWERS = [
-    'Ask your doctor about {} today!',
-    'Try {}!',
-    '{} can help!',
-    'Ask your doctor if {} is right for you!',
+    u'Ask your doctor about {}\u00AE today!',
+    u'Try {}\u00AE!',
+    u'{}\u00AE can help!',
+    u'Ask your doctor if {}\u00AE is right for you!',
 ]
 
 # words used to generate diseases
