@@ -1,2 +1,4 @@
 hm/*
+.vscode
 *.pyc
+credentials.py
