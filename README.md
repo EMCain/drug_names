@@ -10,11 +10,11 @@ Drug names based on a Markov chain fed by this [list of drug names](https://drug
 
 you can run any of the files containing if __name__ == '__main__', including: 
 
-  [Drug Names](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/drug_name.py)
+ -  [Drug Names](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/drug_name.py)
 
-  [Generate Advertisement](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_advertisement.py)
+ -  [Generate Advertisement](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_advertisement.py)
 
-  [Generate Disease](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_disease.py)
+ -  [Generate Disease](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_disease.py)
 
 from the command line to print the results.
 
