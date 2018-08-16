@@ -11,3 +11,7 @@ def get_ad():
     answer = choice(c.ANSWERS).format(create_drug_name())
 
     return '{} {}'.format(question, answer)
+
+# for testing
+if __name__ == '__main__':
+    print(get_ad())

@@ -26,3 +26,8 @@ def disease():
         return superlative_symptom()
     else:
         return adj_organ()
+
+
+# for testing
+if __name__ == '__main__':
+    print(disease())
