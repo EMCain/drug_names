@@ -80,3 +80,9 @@ IIII 123
 Ferix
 
 Bis
+
+# References
+
+[How to Write a Twitter Bot with Python and Tweepy](https://dototot.com/how-to-write-a-twitter-bot-with-python-and-tweepy)
+
+[How to Fake a Sophisticated Knowledge of Wine with Markov Chains](http://www.onthelambda.com/2014/02/20/how-to-fake-a-sophisticated-knowledge-of-wine-with-markov-chains/)

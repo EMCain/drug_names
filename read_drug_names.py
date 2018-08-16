@@ -9,7 +9,9 @@ with open('./names.txt', 'w') as names:
         res = get(url_base + letter)
 
         soup = BeautifulSoup(res.text)
-        table = soup.find('table', {'role': 'presentation'}).find('table', {'border': '1'})
+        table = soup.find(
+            'table', {'role': 'presentation'}
+        ).find('table', {'border': '1'})
         anchors = table.find_all('a')
         for a in anchors:
             names.write('{}\n'.format(a.string))
