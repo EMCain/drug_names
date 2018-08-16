@@ -1,13 +1,12 @@
 import json
-# based on http://www.onthelambda.com/2014/02/20/how-to-fake-a-sophisticated-knowledge-of-wine-with-markov-chains/
-# but with letters instead of words
 
 
 def generate_trigram(letters):
     if len(letters) < 3:
         return
     for i in range(len(letters) - 2):
-        yield(letters[i], letters[i+1], letters[i+2])
+        yield(letters[i], letters[i + 1], letters[i + 2])
+
 
 chain = {}
 with open('names.txt', 'r') as names:

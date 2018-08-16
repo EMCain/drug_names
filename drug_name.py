@@ -18,6 +18,7 @@ def create_drug_name():
 
         return new_name
 
+
 # for testing
 if __name__ == '__main__':
     print(create_drug_name())
