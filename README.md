@@ -8,6 +8,8 @@ Drug names based on a Markov chain fed by this [list of drug names](https://drug
 
 ## to use:
 
+you can run any of the files containing if __name__ == '__main__': from the command line to print the results (specify the files, they all end in .py)
+
 set up your virtualenv with Python 3
 
 `$ pip install -r requirements.text`
@@ -15,6 +17,10 @@ set up your virtualenv with Python 3
 use `drug_name.create_drug_name` to get a medication name, or `generate_advertisement.get_ad` for a full advertisement.
 
 You could regenerate names.txt (list of real drug names) or chain.p if you wanted to, but you don't have to.
+
+Don't forget to check out the official drug_names [twitterbot!](https://twitter.com/askyrdoctorabot)
+
+Like our twitterbot?  Learn to set up your own [here.](https://dev.to/emcain/how-to-set-up-a-twitter-bot-with-python-and-heroku-1n39)
 
 ## Example ads
 Are you plagued by restless elbow? Ask your doctor if Mencardand Ethroarb® is right for you!
