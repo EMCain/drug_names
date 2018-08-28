@@ -8,16 +8,6 @@ Drug names based on a Markov chain fed by this [list of drug names](https://drug
 
 ## to use:
 
-you can run any of the files containing if __name__ == '__main__', including: 
-
- -  [Drug Names](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/drug_name.py)
-
- -  [Generate Advertisement](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_advertisement.py)
-
- -  [Generate Disease](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_disease.py)
-
-from the command line to print the results.
-
 set up your virtualenv with Python 3
 
 `$ pip install -r requirements.text`
@@ -29,6 +19,17 @@ You could regenerate names.txt (list of real drug names) or chain.p if you wante
 Don't forget to check out the official drug_names [twitterbot!](https://twitter.com/askyrdoctorabot)
 
 Like our twitterbot?  Learn to set up your own [here.](https://dev.to/emcain/how-to-set-up-a-twitter-bot-with-python-and-heroku-1n39)
+
+You can run any of the files containing if __name__ == '__main__', including: 
+
+ -  [drug_name.py](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/drug_name.py)
+
+ -  [generate_advertisement.py](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_advertisement.py)
+
+ -  [generate_disease.py](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_disease.py)
+
+from the command line to print the results.
+
 
 ## Example ads
 Are you plagued by restless elbow? Ask your doctor if Mencardand Ethroarb® is right for you!
