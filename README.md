@@ -16,6 +16,21 @@ use `drug_name.create_drug_name` to get a medication name, or `generate_advertis
 
 You could regenerate names.txt (list of real drug names) or chain.p if you wanted to, but you don't have to.
 
+Don't forget to check out the official drug_names [twitterbot!](https://twitter.com/askyrdoctorabot)
+
+Like our twitterbot?  Learn to set up your own [here.](https://dev.to/emcain/how-to-set-up-a-twitter-bot-with-python-and-heroku-1n39)
+
+You can run any of the files containing if __name__ == '__main__', including: 
+
+ -  [drug_name.py](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/drug_name.py)
+
+ -  [generate_advertisement.py](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_advertisement.py)
+
+ -  [generate_disease.py](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/generate_disease.py)
+
+from the command line to print the results.
+
+
 ## Example ads
 Are you plagued by restless elbow? Ask your doctor if Mencardand Ethroarb® is right for you!
 
