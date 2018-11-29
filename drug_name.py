@@ -7,7 +7,7 @@ DRUG_NAMES = set()  # calclulate this the first time it runs
 
 with open('names.txt', 'r') as f:
     for line in f.readlines():
-        DRUG_NAMES = DRUG_NAMES.union({n for n in line.lower().strip().split()})
+        DRUG_NAMES.update({n for n in line.lower().strip().split()})
 
 def create_drug_name():
     # Set a flag and loop until we find an inoffensive drug_name
