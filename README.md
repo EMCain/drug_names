@@ -10,9 +10,28 @@ Drug names based on a Markov chain fed by this [list of drug names](https://drug
 
 set up your virtualenv with Python 3
 
+```python
+$ virtualenv -p=(which python3) hm
+$ source hm/bin/activate
+```
+
+install the requirements
+
 `$ pip install -r requirements.text`
 
+
+
 use `drug_name.create_drug_name` to get a medication name, or `generate_advertisement.get_ad` for a full advertisement.
+
+### testing
+
+After activating your virtual env and installing requirements, run
+
+```
+$ pytest
+```
+
+### other info
 
 You could regenerate names.txt (list of real drug names) or chain.p if you wanted to, but you don't have to.
 
@@ -20,7 +39,7 @@ Don't forget to check out the official drug_names [twitterbot!](https://twitter.
 
 Like our twitterbot?  Learn to set up your own [here.](https://dev.to/emcain/how-to-set-up-a-twitter-bot-with-python-and-heroku-1n39)
 
-You can run any of the files containing if __name__ == '__main__', including: 
+You can run any of the files containing if __name__ == '__main__', including:
 
  -  [drug_name.py](https://github.com/EMCain/drug_names/blob/b6c5563945014a5cad72e37f1aee5e934c094c2f/drug_name.py)
 
