@@ -39,7 +39,7 @@ def is_duplicate(drug_name):
     with open('names.txt', 'r') as f:
         for line in f.readlines():
             drug_names = drug_names.union({n for n in line.lower().strip().split()})
-    if drug_name in drug_names:
+    if drug_name.lower() in drug_names:
         return True  # accidentally generated a real drug name
     return False
 
