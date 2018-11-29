@@ -1,4 +1,4 @@
-from drug_name import is_offensive
+from drug_name import is_offensive, is_duplicate
 
 bad_words = ['gosh', 'knucklehead', 'toot']
 
@@ -14,3 +14,13 @@ def test_is_offensive_harmless_words():
     assert is_offensive("baby", bad_words) == False
     assert is_offensive("smile", bad_words) == False
     assert is_offensive("chewbacca", bad_words) == False
+
+def test_is_duplicate_existing_drugs():
+    assert is_duplicate("venlafaxine") == True
+    assert is_duplicate("metoprolol") == True
+    assert is_duplicate("lorazepam") == True
+
+def test_is_duplicate_fictional_drugs():
+    assert is_duplicate("Spice Melange") == False
+    assert is_duplicate("Substance D") == False
+    assert is_duplicate("Ketracel-white") == False

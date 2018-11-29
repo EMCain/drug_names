@@ -13,10 +13,10 @@ def create_drug_name():
         # Swallow exception if unable to connect and supply a list that won't
         # trip the profanity filter.
         bad_words = list('xyzabc')
-        
+
     while True:
         drug_name = get_name_from_chain()
-        if not is_offensive(drug_name, bad_words) and is_duplicate(drug_name):
+        if not is_offensive(drug_name, bad_words) and not is_duplicate(drug_name):
             return drug_name
 
 def get_name_from_chain():
@@ -35,31 +35,32 @@ def get_name_from_chain():
         return new_name
 
 def is_duplicate(drug_name):
+    drug_names = set()
     with open('names.txt', 'r') as f:
-        drug_names = [name.lower().strip() for name in f.readlines()]
-
-    if drug_name.lower() in drug_names:
+        for line in f.readlines():
+            drug_names = drug_names.union({n for n in line.lower().strip().split()})
+    if drug_name in drug_names:
         return True  # accidentally generated a real drug name
     return False
 
 def is_offensive(drug_name, bad_words):
     """ Check if any words in the specified list overlap with drug_name """
-    
+
     for bad_word in bad_words:
         if bad_word in drug_name:
             return True
     return False
-        
+
 def get_bad_words(bad_words_url):
-    """ 
-    Retrieves a list of offensive words retrieved and parsed from 
-    the input url 
+    """
+    Retrieves a list of offensive words retrieved and parsed from
+    the input url
     """
     r = requests.get(bad_words_url)
 
     if r.status_code != 200:
         raise requests.RequestException
-    
+
     bad_words = r.text.strip().split("\n")
     return bad_words
 
