@@ -36,7 +36,7 @@ pylint==1.9.2
 PySocks==1.6.8
 pytest==3.9.1
 python-dateutil==1.5
-requests==2.18.4
+requests>=2.20.0
 requests-oauthlib==1.0.0
 simplegeneric==0.8.1
 six==1.11.0
