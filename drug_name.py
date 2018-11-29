@@ -3,7 +3,11 @@ import requests
 from random import choice
 
 BAD_WORDS_URL =  'https://www.cs.cmu.edu/~biglou/resources/bad-words.txt'
+DRUG_NAMES = set()  # calclulate this the first time it runs
 
+with open('names.txt', 'r') as f:
+    for line in f.readlines():
+        DRUG_NAMES = DRUG_NAMES.union({n for n in line.lower().strip().split()})
 
 def create_drug_name():
     # Set a flag and loop until we find an inoffensive drug_name
@@ -35,11 +39,7 @@ def get_name_from_chain():
         return new_name
 
 def is_duplicate(drug_name):
-    drug_names = set()
-    with open('names.txt', 'r') as f:
-        for line in f.readlines():
-            drug_names = drug_names.union({n for n in line.lower().strip().split()})
-    if drug_name.lower() in drug_names:
+    if drug_name.lower() in DRUG_NAMES:
         return True  # accidentally generated a real drug name
     return False
 
