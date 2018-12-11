@@ -2,18 +2,19 @@ import json
 import requests
 from random import choice
 
-BAD_WORDS_URL =  'https://www.cs.cmu.edu/~biglou/resources/bad-words.txt'
+BAD_WORDS_URL = 'https://www.cs.cmu.edu/~biglou/resources/bad-words.txt'
 DRUG_NAMES = set()  # calclulate this the first time it runs
 
-with open('names.txt', 'r') as f:
+with open('./lib/names.txt', 'r') as f:
     for line in f.readlines():
         DRUG_NAMES.update({n for n in line.lower().strip().split()})
+
 
 def create_drug_name():
     # Set a flag and loop until we find an inoffensive drug_name
     try:
         bad_words = get_bad_words(BAD_WORDS_URL)
-    except:
+    except requests.RequestException:
         # Swallow exception if unable to connect and supply a list that won't
         # trip the profanity filter.
         bad_words = list('xyzabc')
@@ -23,8 +24,9 @@ def create_drug_name():
         if not is_offensive(drug_name, bad_words) and not is_duplicate(drug_name):
             return drug_name
 
+
 def get_name_from_chain():
-    with open('chain.json', 'r') as f:
+    with open('./lib/chain.json', 'r') as f:
         chain = json.load(f)
         new_name = ''
 
@@ -38,10 +40,12 @@ def get_name_from_chain():
             new_name += l2
         return new_name
 
+
 def is_duplicate(drug_name):
     if drug_name.lower() in DRUG_NAMES:
         return True  # accidentally generated a real drug name
     return False
+
 
 def is_offensive(drug_name, bad_words):
     """ Check if any words in the specified list overlap with drug_name """
@@ -50,6 +54,7 @@ def is_offensive(drug_name, bad_words):
         if bad_word in drug_name:
             return True
     return False
+
 
 def get_bad_words(bad_words_url):
     """
@@ -63,6 +68,7 @@ def get_bad_words(bad_words_url):
 
     bad_words = r.text.strip().split("\n")
     return bad_words
+
 
 # for testing
 if __name__ == '__main__':

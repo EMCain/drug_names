@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 url_base = 'https://druginfo.nlm.nih.gov/drugportal/drug/names/'
 
-with open('./names.txt', 'w') as names:
+with open('./lib/names.txt', 'w') as names:
     for letter in ascii_lowercase:
         res = get(url_base + letter)
 
