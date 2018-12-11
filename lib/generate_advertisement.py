@@ -1,8 +1,8 @@
 from random import choice
 
-import constants as c
-from drug_name import create_drug_name
-from generate_disease import disease
+from lib import constants as c
+from lib.drug_name import create_drug_name
+from lib.generate_disease import disease
 
 
 def get_ad():

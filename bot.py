@@ -1,8 +1,8 @@
 import time
-import sys
 import tweepy
 
-from generate_advertisement import get_ad
+from src.tweet import Account
+from lib.generate import generate
 
 # from credentials import *  # use this one for testing
 
@@ -20,8 +20,14 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
+account = Account(
+    CONSUMER_KEY=CONSUMER_KEY,
+    CONSUMER_SECRET=CONSUMER_SECRET,
+    ACCESS_KEY=ACCESS_KEY,
+    ACCESS_SECRET=ACCESS_SECRET
+)
+
 while True:
     print("about to get ad...")
-    ad = get_ad()
-    api.update_status(ad)
+    generate(account)
     time.sleep(INTERVAL)

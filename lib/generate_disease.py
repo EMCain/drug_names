@@ -1,5 +1,5 @@
 from random import choice, randint
-import constants as c
+from lib import constants as c
 
 
 def adj_organ():
