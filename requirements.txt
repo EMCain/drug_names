@@ -31,7 +31,7 @@ pluggy==0.8.0
 prompt-toolkit==1.0.15
 ptyprocess==0.5.2
 py==1.7.0
-Pygments==2.2.0
+Pygments==2.7.4
 pylint==1.9.2
 PySocks==1.6.8
 pytest==3.9.1
